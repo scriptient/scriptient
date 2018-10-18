@@ -9,6 +9,7 @@ class AdminList extends React.Component {
     constructor(data) {
 
         super();
+        console.log(data)
         this.state = {
             admins: data.data.edges
         }
@@ -35,7 +36,6 @@ export default ({ data }) => {
 
     return (
         <Layout>
-            console.log(data)
             <h1>Web App Administrators</h1>
             <AdminList data = {data.allMongodbScriptientDbAdminUsers} />
             <Link to="/">Home</Link>
