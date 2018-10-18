@@ -1,36 +1,8 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import { Link } from 'gatsby'
-
+import AdminList from '../components/admin-list'
 import Layout from '../components/layout'
-
-class AdminList extends React.Component {
-
-    constructor(data) {
-
-        super();
-        console.log(data)
-        this.state = {
-            admins: data.data.edges
-        }
-
-    }
-
-    render() {
-        
-        const listItems = this.state.admins.map((admin) =>
-            <li key={admin.node.first_name}>     
-                {admin.node.first_name}
-            </li>
-        );
-
-        return (
-            <ul>{listItems}</ul>
-        )
-
-    }
-
-}
 
 export default ({ data }) => {
 
