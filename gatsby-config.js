@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Scriptient',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -23,6 +23,12 @@ module.exports = {
         dbName: `scriptientDb`,
         collection: [`admin_users`]
       },
-    }
+    },
+    {
+      resolve: `@wapps/gatsby-plugin-material-ui`,
+      options: {
+        // Add any options here
+      },
+    },
   ],
 }

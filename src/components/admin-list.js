@@ -16,7 +16,7 @@ class AdminList extends React.Component {
         
         const listItems = this.state.admins.map((admin) =>
             <li key={admin.node.first_name}>     
-                {admin.node.first_name}
+                {admin.node.first_name} {admin.node.last_name} | {admin.node.email}
             </li>
         );
 
