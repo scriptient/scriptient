@@ -1,9 +1,7 @@
 import React from 'react'
 import { graphql, navigate } from "gatsby"
-import { Link } from 'gatsby'
 import AdminList from '../components/admin-list'
 import Layout from '../components/layout'
-import { Button } from '@material-ui/core';
 
 export default ({ data }) => {
 
@@ -12,9 +10,6 @@ export default ({ data }) => {
             <h1>Web App Administrators</h1>
             <AdminList data = {data.allMongodbScriptientDbAdminUsers} />
 
-            <Button variant="contained" color="primary" onClick={() => { navigate('/') }}>
-                Home
-            </Button>
         </Layout>
     )
 }

@@ -11,9 +11,12 @@
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-source-mongodb": "^2.0.5",
+    "material-design-icons": "^3.0.1",
+    "open-iconic": "^1.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-with-styles": "^3.2.1"
   },
   "keywords": [
     "gatsby"
